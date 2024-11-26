@@ -34,6 +34,5 @@ namespace HRLeaveManagementDomain
             get;
             set;
         }
-
     }
 }

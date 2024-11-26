@@ -9,10 +9,10 @@ namespace HRLeaveManagementDomain
 {
     public class LeaveType:  BaseEntity
     {
-        public int Id
-        {
-            get; set;
-        }
+        //public int Id
+        //{
+        //    get; set;
+        //}
 
         public string Name
         {

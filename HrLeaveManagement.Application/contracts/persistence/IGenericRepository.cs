@@ -8,15 +8,14 @@ namespace HrLeaveManagement.Application.contracts.persistence
 {
     public interface IGenericRepository<T> where T : class
     {
-        Task<T> GetAsync();
+        Task<List<T>> GetAsync();
+        Task<List<T>> GetByIdAsync(int id);
 
-        Task<T> GetByIdAsync(int id);
+        Task<List<T>> CreateAsync(T entity);
 
-        Task<T> CreateAsync(T entity);
+        Task<List<T>> UpdateAsync(T entity);
 
-        Task<T> UpdateAsync(T entity);
-
-        Task<T> DeleteAsync (T entity);
+        Task<List<T>> DeleteAsync (T entity);
     }
 
 }

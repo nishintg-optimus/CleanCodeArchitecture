@@ -8,9 +8,17 @@ namespace HrLeaveManagement.Application.Features.LeaveType.Queries.GetAllLeavesT
 {
     public class LeaveTypeDto
     {
-        public LeaveTypeDto() 
-        { 
+        public int Id { get; set; }
+        public string Name
+        {
+            get; set;
+        } = string.Empty;
 
+        public int DefaultDays
+        {
+            get; set;
         }
     }
+    
 }
+

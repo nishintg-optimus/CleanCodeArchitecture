@@ -12,7 +12,7 @@ namespace HrLeaveManagement.Application.mappingProfiles
     {
         public LeaveTypeProfile()
         {
-            //CreateMap<LeaveTypeDto,LeaveType>().ReverseMap();
+            CreateMap<LeaveTypeDto,LeaveType>().ReverseMap();
         }
     }
 }
