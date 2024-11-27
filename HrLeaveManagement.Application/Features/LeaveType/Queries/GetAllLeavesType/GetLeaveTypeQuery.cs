@@ -9,7 +9,5 @@ using MediatR;
 namespace HrLeaveManagement.Application.Features.LeaveType.Queries.GetAllLeavesType
 {
     public record GetLeaveTypeQuery : IRequest<List<LeaveTypeDto>>;
-
-
 }
     
